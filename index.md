@@ -4,7 +4,6 @@ paginate: true
 alt_title: "basher"
 sub_title: "full stack web development"
 image: /assets/images/basher-frontpage.jpg
-
 introduction: |
   You've just landed at **basher.dk** - congrats! We do software consultancy and full stack web development in both frontend and backend - and have been doing so for 15+ years.
 
@@ -17,4 +16,4 @@ introduction: |
   - Progressive Web Apps - the future of apps!
   
   Wanna know more or hire me for a project? Contact me on [{{ site.data.theme.t.email | default: 'Email' }}]({{ site.email }}) or {% include icon-twitter.html username=site.twitter_username label='Twitter' %}
-  ---
+---
