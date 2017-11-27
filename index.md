@@ -16,5 +16,5 @@ introduction: |
   - Responsive web design
   - Progressive Web Apps - the future of apps!
   
-  Wanna know more or hire me for a project?Contact me on <a href="mailto:{{ site.email }}"><span class="icon icon--email">{% include icon-email.svg %}</span><span class="label">{{ site.data.theme.t.email | default: 'Email' }}</span></a> or {% include icon-twitter.html username=site.twitter_username label='Twitter' %}
+  Wanna know more or hire me for a project? Contact me on [<span class="icon icon--email">{% include icon-email.svg %}</span><span class="label">{{ site.data.theme.t.email | default: 'Email' }}</span>]({{ site.email }}) or {% include icon-twitter.html username=site.twitter_username label='Twitter' %}
   ---
