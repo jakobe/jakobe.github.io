@@ -1,6 +1,6 @@
 ---
 layout: home
-paginate: true
+paginate: false
 alt_title: "basher"
 sub_title: "full stack web development"
 image: /assets/images/basher-frontpage.jpg
