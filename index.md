@@ -16,3 +16,4 @@ introduction: |
   - Progressive Web Apps - the future of apps!
   
   Wanna know more or hire me for a project? Contact me on info@basher.dk
+---
