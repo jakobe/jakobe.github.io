@@ -20,7 +20,7 @@ description: full stack web development
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
-  name:
+  name: Jakob Engelbrecht Olesen
   twitter: jakob_engel
   picture:
 twitter_username: jakob_engel
