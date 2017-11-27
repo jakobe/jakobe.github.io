@@ -1,10 +1,9 @@
 ---
-title:  My first blog entry!
+title:  Finally, my very first blog entry!
 date:   2017-11-27 21:37:24 +0100
 categories: blogging
 ---
 
-## Finally, my first blog entry!
 Yes. I finally did it: Setup my very own blog and created my first blog entry. It's actually something I've been wanting to do for a loooong time (2+ years!) but hey, time flies and here I am as 2017 is in it's final stretch.
 
 So whats up with this blog? Well, my daughter thought I would be blogging about shopping, doing taste-tests and so forth, but as disappointing as it may be, I'm not gonna do that - although I will throw her a couple of emojis: :dog: :kiss: :princess: :clap: :two_hearts: :stuck_out_tongue_winking_eye:.
