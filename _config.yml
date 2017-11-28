@@ -26,6 +26,7 @@ author:
 twitter_username: jakob_engel
 github_username: jakobe
 logo: /assets/icons/basher-logo-white.svg
+google_analytics: UA-110323056-1
 
 # Build settings
 markdown: kramdown
