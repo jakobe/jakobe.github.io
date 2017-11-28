@@ -7,7 +7,7 @@ tags: [pwa, ddd, app development]
 
 Yes. I finally did it: Setup my very own blog and created my first blog entry. It's actually something I've been wanting to do for a loooong time (2+ years!) but hey, time flies and here I am as 2017 is in it's final stretch.
 
-So whats up with this blog? Well, my daughter thought I would be blogging about shopping, doing taste-tests and so forth, but as disappointing as it may be, I'm not gonna do that - although I will throw her a couple of emojis: :dog: :kiss: :princess: :clap: :two_hearts: :stuck_out_tongue_winking_eye:.
+So whats up with this blog? Well, my daughter thought I would be blogging about shopping, doing taste-tests and so forth, but as disappointing as it may be, I'm not gonna do that - although I will throw her a couple of emojis just for the idea: :dog: :kiss: :princess: :clap: :two_hearts: :stuck_out_tongue_winking_eye:.
 
 This blog is for my technical ramblings, and while it may be about C# and .NET, Domain Driven Design, Clean Code, microservices, Continous Integration & Deployment, Dependency Injection, Feature Toggling and much more, I will start out by blogging about what I also love a lot: Frontend web development.
 
