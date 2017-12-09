@@ -8,3 +8,9 @@
 @import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
 
 @import "basically-basic";
+
+header.intro .intro-image svg#basher-logo {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
