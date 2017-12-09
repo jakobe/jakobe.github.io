@@ -8,12 +8,14 @@
   <div class="inner">
     <div class="title-area">
       {% if page.url == '/' %}
-        <h1 class="site-title">
+      {% comment %}
+      <h1 class="site-title">
           <a href="{{ '/' | relative_url }}">
             {% if site.logo %}<img src="{{ site_logo }}" alt="" class="site-logo">{% endif %}
             <span>{{ site.title | escape }}</span>
           </a>
         </h1>
+      {% endcomment %}
       {% else %}
         <p class="site-title">
           <a href="{{ '/' | relative_url }}">

@@ -1,9 +1,10 @@
 ---
 layout: home
 paginate: false
-alt_title: "basher"
+alt_title: <img src="/assets/icons/basher-logo-white.svg" alt="basher logo">basher
 sub_title: "full stack web development"
 image: /assets/images/basher-frontpage.jpg
+logo: false
 imageoverlay: <svg
    viewBox="0 0 665.33331 392"
    height="300"
