@@ -1,4 +1,4 @@
-﻿---
+---
 title:  The ins and out of registering a Service Worker
 date:   2017-12-07 16:58:00 +0100
 categories: blogging
