@@ -77,12 +77,12 @@ defaults:
     values:
       layout: post
       read_time: true
+
   - scope:
-      path: "_drafts"
+      path: ""
       type: drafts
     values:
       layout: post
-      read_time: true
 
 collections:
   drafts:
