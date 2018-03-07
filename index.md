@@ -30,7 +30,7 @@ introduction: |
   Basher is owned and run by **Jakob Engelbrecht Olesen**. We do software consultancy and full stack web development in both frontend and backend - and have been doing so for 15+ years.    
   At basher we :heart::
 
-  - All things HTML5, JS & CSS
+  - All things HTML5, CSS3 & JS 
   - All things .NET and C#
   - Responsive web design
   - Progressive Web Apps - the future of apps!
