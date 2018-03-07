@@ -81,9 +81,9 @@ defaults:
     values:
       layout: post
       read_time: true
-
+  # _drafts
   - scope:
-      path: ""
+      path: "_drafts"
       type: drafts
     values:
-      layout: post
+      layout: draft
