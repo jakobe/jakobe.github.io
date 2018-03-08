@@ -14,7 +14,7 @@ Essentially meaning: **Service Worker => Proxy**
 
 I don't know if this makes just as much sense to you, but bear with me as we dig further into this:
 
-The **1st** time you visit a website (or a PWA) that registers a service worker not much happens: The service worker [registers, installs](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle) - probably precaches some assets - and then sits idle [waiting](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#activate) for the following request(s).
+The **1st** time you visit a website (or a PWA) that registers a service worker not much happens: The service worker [registers, installs](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle) - probably precaches some assets - and then sits idle [waiting](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#activate) for subsequent request(s).
 
 The real [McCoy](https://en.wikipedia.org/wiki/The_real_McCoy) is when you visit the same website (or PWA) the **2nd time** - that is, after closing all browsers/tabs for the given site and re-opening it in a new tab/browser:  
 _Note: In Service Worker mojo the 'same' website is called `scope`. This means you are visiting a page at the same level or deeper from where the SW was registered._
@@ -23,6 +23,6 @@ _Note: In Service Worker mojo the 'same' website is called `scope`. This means y
 
 If your service worker responds to the request through the `event.respondWith(...)` method then that asset will be used straight of the cache. If not, the browser will request the resource _the usual way_: From the browser's own cache or from the server (your server or 3rd party).
 
-If you're like me, you're probably better of visualizing this as:
+Let's visualize this:
 
 ![Service Worker Request Flow]({{ "/assets/images/service-workers/service-worker-flow.jpg" | absolute_url }})
