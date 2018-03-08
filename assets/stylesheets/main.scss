@@ -33,20 +33,19 @@
             border: 7px solid #c81412;
             padding: 4px 8px;
             border-radius: 0.25rem;
+            position: absolute;
             transform-origin: center left;
             animation-name: rotateDown;
-            animation-duration: 5s;
-            animation-delay: 5s;
+            animation-duration: 1.5s;
+            animation-delay: 1s;
+            animation-fill-mode: backwards;
+            transform: rotate(-11deg) translateY(-30px) translateX(-30px);
         }
 
         @keyframes rotateDown {
             0% {
                 transform: rotate(-90deg) translateY(-30px) translateX(-30px);
                 opacity: 0;
-            }
-            100% {
-                transform: rotate(-11deg) translateY(-30px) translateX(-30px);
-                opacity: 1;
             }
         }
     }
