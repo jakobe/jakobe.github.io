@@ -1,21 +1,26 @@
 ---
 title:  The ins and out of registering a Service Worker
+sub_title: Service Workers explained
+draft: true
 date:   2017-12-07 16:58:00 +0100
 categories: blogging
 tags: [pwa, app development, service workers, sw]
 ---
 
 # Registering a service worker
-I've been hearing about service workers for quite some time now, but it's been somewhat of an abstract concept to me. That is, until someone (link?) gave this explanation:
+I've been hearing a lot about service workers for quite some time now, but hadn't really figured out what the fuzz was about. To me the term "Service Worker" doesn't really ring any bells in it self, so it's been somewhat of an abstract concept to me. That is, until I read [this short explanation](https://developers.google.com/web/fundamentals/primers/service-workers/):
 
-> Service Worker => Proxy
+> Service worker is a programmable network proxy, allowing you to control how network requests from your page are handled.
+
+Essentially meaning: **Service Worker => Proxy**
 
 I don't know if this makes just as much sense to you, but bear with me as we dig further into this:
 
-The **1st** time you visit a website (or PWA) that registers a service worker not much happens: The service worker registers, installs - probably precaches some assets - and then starts [waiting](link?)
+The **1st** time you visit a website (or a PWA) that registers a service worker not much happens: The service worker [registers, installs](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle) - probably precaches some assets - and then sits idle [waiting](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#activate) for the following request(s).
 
-The real <s>mccoy</s> is when you visit the same website (or PWA) the **2nd time** (that is, after closing all browsers/tabs for the given site and re-opening it in a new tab/browser):
-**Note:** In SW mojo the **same** website is called `scope`. This means you are visiting a page at the same level or deeper from where the SW was registered.  
-**Now** what happens is, the browser sees you're visiting a page that is now **controlled* by your service worker and therefore it will issue a `fetch` request to your service worker for all the assets it needs to render the page (html, css, js, img) - and yes, also assets _outside_ your current `scope` [CONFIRM!].
+The real [McCoy](https://en.wikipedia.org/wiki/The_real_McCoy) is when you visit the same website (or PWA) the **2nd time** - that is, after closing all browsers/tabs for the given site and re-opening it in a new tab/browser:  
+_Note: In Service Worker mojo the 'same' website is called `scope`. This means you are visiting a page at the same level or deeper from where the SW was registered._
 
-If your service worker responds with a ??? then that asset will be used straight of the cache. If not, then the browser will request the resource _the usual way_: From the browser's own cache or from the server (yours or from 
+**Now** what happens is, the browser sees you're visiting a page that is now *controlled* by your service worker and therefore it will proxy requests through your service worker (by raising a `fetch` event) for all the assets it needs to render the page (html, css, js, img) - and yes, also assets _outside_ your current `scope` [CONFIRM!?].
+
+If your service worker responds to the request through the `event.respondWith(...)` method then that asset will be used straight of the cache. If not, then the browser will request the resource _the usual way_: From the browser's own cache or from the server (your server or 3rd party).   
