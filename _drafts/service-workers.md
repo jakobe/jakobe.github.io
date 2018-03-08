@@ -1,14 +1,12 @@
 ---
-title:  The ins and outs of Service Workers
-sub_title: Service Workers explained
-draft: true
+title:  Service Workers explained
+sub_title: - a primer on service workers
 date:   2017-12-07 16:58:00 +0100
 categories: blogging
 tags: [pwa, app development, service workers, sw]
 ---
 
-# Registering a service worker
-I've been hearing a lot about service workers for quite some time now, but hadn't really figured out what the fuzz was about. To me the term "Service Worker" doesn't really ring any bells in it self, so it's been somewhat of an abstract concept to me. That is, until I read [this short explanation](https://developers.google.com/web/fundamentals/primers/service-workers/):
+I've been hearing a lot about service workers for a couple of years now, but hadn't really figured out what the fuzz was about. To me the term "Service Worker" doesn't really ring any bells in it self, so it's been somewhat of an abstract concept to me. That is, until I read [this short explanation](https://developers.google.com/web/fundamentals/primers/service-workers/):
 
 > Service worker is a programmable network proxy, allowing you to control how network requests from your page are handled.
 
