@@ -1,6 +1,6 @@
 ---
 title: Service Workers explained
-sub_title: &shy; a primer on service workers
+sub_title: &#173; a primer on service workers
 date: 2017-12-07 16:58:00 +0100
 categories: blogging
 tags: [pwa, app development, service workers, sw]
