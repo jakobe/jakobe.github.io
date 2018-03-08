@@ -18,11 +18,11 @@ $sidebar-width: 260px;
     transition: opacity ease-out 0.4s;
 }
 
-//@include breakpoint(max-width $small) {
-@media screen and (max-width: 320px) {
-    .wrapper.is--pushed {
-        .site-title {
-            opacity: 0;
+.wrapper.is--pushed {
+    .site-title {
+        opacity: 0;
+        @include breakpoint($medium) {
+            opacity: 1;
         }
     }
 }
