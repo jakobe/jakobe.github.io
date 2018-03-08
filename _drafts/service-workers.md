@@ -21,7 +21,8 @@ _Note: In Service Worker mojo the 'same' website is called `scope`. This means y
 
 **Now** what happens is, the browser sees you're visiting a page that is now *controlled* by your service worker and therefore it will proxy requests through your service worker (by raising a `fetch` event) for all the assets it needs to render the page (html, css, js, img) - and yes, also assets _outside_ your current `scope` [CONFIRM!?].
 
-If your service worker responds to the request through the `event.respondWith(...)` method then that asset will be used straight of the cache. If not, then the browser will request the resource _the usual way_: From the browser's own cache or from the server (your server or 3rd party).
+If your service worker responds to the request through the `event.respondWith(...)` method then that asset will be used straight of the cache. If not, the browser will request the resource _the usual way_: From the browser's own cache or from the server (your server or 3rd party).
 
-Put in a diagram it looks like this:
+If you're like me, you're probably better of visualizing this as:
+
 ![Service Worker Request Flow]({{ "/assets/images/service-workers/service-worker-flow.jpg" | absolute_url }})
