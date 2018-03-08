@@ -3,13 +3,12 @@
 ---
 
 @charset "utf-8";
+$sidebar-width: 260px;
 
 // Theme skin
 @import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
 
 @import "basically-basic";
-
-$sidebar-width: 260px;
 
 .sidebar-toggle-label {
     color: white;
