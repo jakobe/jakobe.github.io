@@ -25,10 +25,38 @@
 }
 
 .layout--draft {
-    .draft {
-        border: 1px dashed #d9b637;
-        color: #d9b637;
-        display: inline-block;
-        padding: 4px 4px;
+    h1.intro-title
+    {
+        .draft
+        {
+            color: #c81412;
+            border: 7px solid #c81412;
+            padding: 4px 8px;
+            border-radius: 0.25rem;
+            transform-origin: center left;
+            animation-name: rotateDown;
+            animation-duration: 5s;
+            animation-delay: 5s;
+        }
+
+        @keyframes rotateDown {
+            0% {
+                transform: rotate(-90deg) translateY(-30px) translateX(-30px);
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(-11deg) translateY(-30px) translateX(-30px);
+                opacity: 1;
+            }
+        }
+    }
+
+    main {
+        .draft {
+            border: 1px dashed #d9b637;
+            color: #d9b637;
+            display: inline-block;
+            padding: 0.4rem;
+        }   
     }
 }
