@@ -30,7 +30,7 @@
         .draft
         {
             color: #c81412;
-            border: 7px solid #c81412;
+            border: 0.4rem solid #c81412;
             padding: 4px 8px;
             border-radius: 0.25rem;
             position: absolute;
@@ -39,12 +39,12 @@
             animation-duration: 1.5s;
             animation-delay: 1s;
             animation-fill-mode: backwards;
-            transform: rotate(-11deg) translateY(-30px) translateX(-30px);
+            transform: rotate(-11deg) translateY(-0.5rem) translateX(-0.5rem);
         }
 
         @keyframes rotateDown {
             0% {
-                transform: rotate(-90deg) translateY(-30px) translateX(-30px);
+                transform: rotate(-90deg) translateY(-0.5rem) translateX(-0.5rem);
                 opacity: 0;
             }
         }
